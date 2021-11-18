@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import { deriveMessageFromError } from "@/utils/errors";
 import ErrorCard from "@/components/Shared/ErrorCard";
+import { deriveMessageFromError } from "@/utils/errors";
 
 interface Props {
     children: React.ReactNode;

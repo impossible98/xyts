@@ -17,7 +17,6 @@ function HomeCard(props: Props) {
                 maxWidth: "1.5em",
                 minHeight: "256px",
                 minWidth: "256px",
-
             }}
         >
             <CardMedia
