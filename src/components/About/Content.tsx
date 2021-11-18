@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 
 import AboutCard from "@/components/About/Card";
 import Header from "@/components/Shared/Header";
-import { APP_NAME } from "@/utils/constants";
+import { APP_NAME, XYTS_REPOSITORY_URL } from "@/utils/constants";
 
 function AboutContent() {
     return (
@@ -19,7 +19,7 @@ function AboutContent() {
                     <AboutCard
                         name={APP_NAME}
                         version={__VERSION__}
-                        link="aaa"
+                        link={XYTS_REPOSITORY_URL}
                     />
                 </Grid>
             </Grid>
