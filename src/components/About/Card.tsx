@@ -10,7 +10,7 @@ interface Props {
     link: string;
 }
 
-function AboutCard(props: Props) {
+function VersionCard(props: Props) {
     return (
         <Card
             sx={{
@@ -61,4 +61,4 @@ function AboutCard(props: Props) {
     );
 }
 
-export default AboutCard;
+export default VersionCard;

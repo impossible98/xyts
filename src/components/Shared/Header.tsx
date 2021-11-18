@@ -14,7 +14,7 @@ function Header(props: Props) {
             }}
         >
             <Typography
-                component="div"
+                component="h1"
                 gutterBottom
                 variant="h3"
             >
