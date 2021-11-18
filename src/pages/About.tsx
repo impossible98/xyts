@@ -1,9 +1,11 @@
 import Container from "@mui/material/Container";
 
+import Header from "@/components/Shared/Header";
+
 function About() {
     return (
         <Container>
-            <h1>About</h1>
+            <Header title="About"/>
         </Container>
     );
 }

@@ -5,6 +5,7 @@ import * as React from "react";
 import { getList } from "@/api/mod";
 
 import HomeCard from "@/components/Home/Card";
+import Header from "@/components/Shared/Header";
 
 interface List {
     status?: string;
@@ -27,32 +28,13 @@ function Home() {
 
     return (
         <Container>
-            <h1>Home</h1>
-
-            <Grid
-                container
-                spacing={3}
-            >
-                <Grid
-                    item
-                >
+            <Header title="Home"/>
+            <Grid container spacing={3}>
+                <Grid item xs={3}>
                     {list.map(item => (
-                        <HomeCard
-                            key={item.id}
-                            title={item.title}
-                            year={item.year}
-                            coverImageLink={item.large_cover_image}
-                        />
+                        <HomeCard key={item.id} title={item.title} year={item.year} coverImageLink={item.large_cover_image}/>
                     ))}
                 </Grid>
-
-                {
-                    /* <ul>
-                {
-                    list.map(item => (<li key={item.id}> {item.title}</li>))
-                }
-            </ul> */
-                }
             </Grid>
         </Container>
     );

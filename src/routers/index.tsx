@@ -1,8 +1,7 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
 
-// const About = React.lazy(() => import("@/pages/About"));
-import About from "@/pages/About";
+const About = React.lazy(() => import("@/pages/About"));
 import Home from "@/pages/Home";
 const NotFound = React.lazy(() => import("@/pages/NotFound"));
 
