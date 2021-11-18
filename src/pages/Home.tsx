@@ -1,16 +1,60 @@
-import { Link } from "react-router-dom";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import * as React from "react";
+
+import { getList } from "@/api/mod";
+
+import HomeCard from "@/components/Home/Card";
+
+interface List {
+    status?: string;
+    status_message?: string;
+}
 
 function Home() {
+    const [list, setList] = React.useState<List>([]);
+
+    React.useEffect(() => {
+        (async () => {
+            const res = await getList();
+
+            const list = res.data.movies.map((item: any) => {
+                return item;
+            });
+            setList(list);
+        })();
+    }, []);
+
     return (
-        <>
-            <main>
-                <h2>Welcome to the homepage!</h2>
-                <p>You can do this, I believe in you.</p>
-            </main>
-            <nav>
-                <Link to="/about">About</Link>
-            </nav>
-        </>
+        <Container>
+            <h1>Home</h1>
+
+            <Grid
+                container
+                spacing={3}
+            >
+                <Grid
+                    item
+                >
+                    {list.map(item => (
+                        <HomeCard
+                            key={item.id}
+                            title={item.title}
+                            year={item.year}
+                            coverImageLink={item.large_cover_image}
+                        />
+                    ))}
+                </Grid>
+
+                {
+                    /* <ul>
+                {
+                    list.map(item => (<li key={item.id}> {item.title}</li>))
+                }
+            </ul> */
+                }
+            </Grid>
+        </Container>
     );
 }
 

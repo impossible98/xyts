@@ -15,3 +15,6 @@ fmt:
 
 start:
 	yarn run serve
+
+rsync: build
+	rsync -av dist/ admin@192.168.31.49:/share/Web/test/
