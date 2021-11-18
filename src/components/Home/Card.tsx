@@ -21,13 +21,16 @@ function HomeCard(props: Props) {
         >
             <CardMedia
                 component="img"
-                height="140px"
+                height="128px"
                 image={props.coverImageLink}
                 alt="green iguana"
             />
             <Typography
                 gutterBottom
                 variant="subtitle1"
+                sx={{
+                    textAlign: "center",
+                }}
             >
                 {props.title} ({props.year})
             </Typography>
