@@ -33,6 +33,8 @@ function ErrorCard(props: Props) {
         >
             <Link
                 to={REPOSITORY_ISSUE_URL}
+                rel="noopener noreferrer"
+                target="_blank"
             >
                 <Box
                     sx={{

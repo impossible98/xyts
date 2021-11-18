@@ -1,8 +1,8 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from "@mui/material/Card";
+import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
 
 interface Props {
     name: string;
@@ -37,9 +37,10 @@ function VersionCard(props: Props) {
                 variant="body1"
             >
                 <Link
-                    to={props.link}
+                    href={props.link}
                     rel="noopener noreferrer"
                     target="_blank"
+                    underline="hover"
                 >
                     <FontAwesomeIcon
                         icon={faGithub}

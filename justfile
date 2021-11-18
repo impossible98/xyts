@@ -4,7 +4,6 @@ default:
   just --list
 
 build: fmt
-	node scripts/version.js
 	yarn run build
 
 dev:
