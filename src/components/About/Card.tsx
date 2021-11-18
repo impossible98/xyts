@@ -54,7 +54,6 @@ function VersionCard(props: Props) {
                     >
                         Source Code
                     </Typography>
-
                 </Link>
             </Typography>
         </Card>

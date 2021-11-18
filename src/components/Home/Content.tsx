@@ -29,8 +29,13 @@ function HomeContent() {
     return (
         <Container>
             <Header title="Home" />
-            <Grid container spacing={3}>
-                <Grid item xs={3}>
+            <Grid
+                container
+                spacing={3}
+            >
+                <Grid
+                    item
+                >
                     {list.map(item => (
                         <HomeCard
                             key={item.id}

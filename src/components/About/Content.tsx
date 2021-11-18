@@ -8,8 +8,7 @@ import { APP_NAME, XYTS_REPOSITORY_URL } from "@/utils/constants";
 function AboutContent() {
     return (
         <Container>
-            <Header
-                title="About" />
+            <Header title="About" />
             <Grid
                 container
                 spacing={3}
