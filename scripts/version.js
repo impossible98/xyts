@@ -1,8 +1,6 @@
 const fs = require("fs/promises");
 const path = require("path");
 
-const prettyJs = require("pretty-js");
-
 const VERSION_PATH = path.join(__filename, "../../VERSION");
 const PKG_PATH = path.join(__filename, "../../package.json");
 const pkg = require("../package.json");
