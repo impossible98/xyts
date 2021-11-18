@@ -13,8 +13,11 @@ function HomeCard(props: Props) {
         <Card
             sx={{
                 borderRadius: "10px",
-                // maxWidth: "1.5em",
-                // minWidth: "256px",
+                maxHeight: "1.5em",
+                maxWidth: "1.5em",
+                minHeight: "256px",
+                minWidth: "256px",
+
             }}
         >
             <CardMedia

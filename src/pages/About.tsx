@@ -1,12 +1,11 @@
-import Container from "@mui/material/Container";
-
-import Header from "@/components/Shared/Header";
+import AboutContent from "@/components/About/Content";
+import ResponsiveDrawer from "@/components/Shared/AppFrame";
 
 function About() {
     return (
-        <Container>
-            <Header title="About"/>
-        </Container>
+        <ResponsiveDrawer
+            content={<AboutContent />}
+        />
     );
 }
 
