@@ -3,9 +3,8 @@ set shell := ["bash", "-uc"]
 default:
   just --list
 
-build:
+build: fmt
 	node scripts/version.js
-	dprint fmt
 	yarn run build
 
 dev:
