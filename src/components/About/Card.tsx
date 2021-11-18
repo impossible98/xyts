@@ -1,8 +1,8 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from "@mui/material/Card";
-import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 
 interface Props {
     name: string;
@@ -37,15 +37,24 @@ function AboutCard(props: Props) {
                 variant="body1"
             >
                 <Link
-                    href={props.link}
+                    to={props.link}
                     rel="noopener noreferrer"
                     target="_blank"
-                    underline="hover"
                 >
                     <FontAwesomeIcon
                         icon={faGithub}
                     />
-                    Source Code
+                    <Typography
+                        component="span"
+                        gutterBottom
+                        variant="body1"
+                        sx={{
+                            marginLeft: "0.5em",
+                        }}
+                    >
+                        Source Code
+                    </Typography>
+
                 </Link>
             </Typography>
         </Card>
