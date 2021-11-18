@@ -14,10 +14,7 @@ import { APP_NAME } from "@/utils/constants";
 
 import { Link } from "react-router-dom";
 
-interface Props {
-}
-
-function AppDrawer(props: Props) {
+function AppDrawer() {
     return (
         <Box>
             <Toolbar>

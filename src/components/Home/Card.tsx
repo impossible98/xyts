@@ -22,7 +22,7 @@ function HomeCard(props: Props) {
         >
             <CardMedia
                 component="img"
-                height="140"
+                height="140px"
                 image={props.coverImageLink}
                 alt="green iguana"
             />
@@ -30,7 +30,7 @@ function HomeCard(props: Props) {
                 gutterBottom
                 variant="subtitle1"
             >
-                {props.title} - {props.year}
+                {props.title} ({props.year})
             </Typography>
         </Card>
     );
